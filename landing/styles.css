@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+ 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 4vh 0;
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.styleheader {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  margin-left: 60vw;
+}
+
+.logo {
+  width: 8%;
+  margin-left: 6%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  font-family: Arial;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #e81c44;
+  border: 0;
+  border-radius: 30px;
+}
+
+.contato-section {
+  text-align: center;
+  margin-top: 50px; 
+ 
+}
+/*Barra de descer*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e81c44;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a81532;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1c5484;
+  margin-left: 28%;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+}
+
+#descricao{
+  color: #1c5484;
+  font-weight: bold;
+}
+#restaurantes{
+  background-color: #fcba03;
+}
+
+.carousel-inner{
+  height: 500px; 
+}
+
+.carousel-inner > .carousel-item > img {
+  width: 700px;
+  height: 500px; 
+}
+
+#btn {
+  display: inline-block;
+  color: #1c5484;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  animation: pulse 2s infinite;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 130%;
+  width: 10vw;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#btn:hover{
+  display: inline-block;
+  color: #a81532;
+  text-decoration: none;
+  list-style: none;
+  transition: background-color 0.3s;
+  width: 10vw;
+  animation: none;
+}
+
+li{
+  list-style: none;
+  font-weight: bold;
+}
+
+.Variedades {
+  padding: 10vh 0;
+  margin-bottom: 10vh;
+}
+
+.Variedades h3 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+footer {
+  background-color: #2d648b;
+  color: #fff;
+  padding: 4vh 0;
+  margin-top: 7%;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+footer a {
+  display: inline-block; /* Garante que os links se comportem como blocos inline */
+  margin: 0 10px; /* Adiciona margem entre os elementos */
+}
+
+#redessociais{
+  width: 26px; /* Ajusta a largura das imagens */
+  height: auto; /* Mantém a proporção da altura */
+  margin-top: 50%;
+  margin-bottom: 50%;
+  vertical-align: middle; /* Alinha as imagens verticalmente */
+}
+
+#redessociais2{
+  width: 38px;
+  height: auto; 
+  margin-top: 50%;
+  margin-bottom: 50%;
+  vertical-align: middle; 
+}
+
+.showcontainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #173449;
+  background: url("showcase.jpg") center center/cover;
+  background-color: rgb(252, 252, 252);
+  background-blend-mode: rgb(255, 255, 255);
+  flex-direction: column;
+  align-content: center;
+  width: 98,9vw;
+}
+
+#redessociais3{
+  width: 28px; 
+  height: auto; 
+  margin-top: 50%;
+  margin-bottom: 50%;
+  vertical-align: middle;
+}
+
+footer p{
+  color:#fff;
+}
+
+a {
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+/* Media Queries */
+/* Media Queries para iPhone XR */
+@media only screen and (max-width: 414px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 20%;
+    margin-left: 5%;
+  }
+  .showcontainer{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #173449;
+    background-color: rgb(252, 252, 252);
+    background-blend-mode: rgb(255, 255, 255);
+    align-content: center;
+    width: 100vw;
+    font-weight: bold;
+  }  
+  #btn {
+    color: #1c5484;
+    text-decoration: none;
+    list-style: none;
+    transition: background-color 0.3s;
+    margin-left: 55%;
+    font-size: 12px;
+  }
+  .hero {
+    text-align: center;
+    padding: 10vh 0;
+  }
+  
+  .hero h2 {
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  
+  .hero p {
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+  }
+}
+
+/* Media Queries para 1280 x 1018 */
+@media only screen and (min-width: 1280px) and (min-height: 1018px) {
+  .container {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
